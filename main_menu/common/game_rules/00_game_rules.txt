@@ -293,6 +293,16 @@ institution_spawn_rule = {
 	}
 }
 
+institution_could_have_spawned_spread_rule = {
+	default = institution_could_have_spawned_spread_disabled
+	institution_could_have_spawned_spread_enabled = {
+		flag = flavour_rule
+	}
+	institution_could_have_spawned_spread_disabled = {
+		flag = flavour_rule
+	}
+}
+
 byz_name = {
 	default = byz_name_default
 	byz_name_default = {
@@ -438,6 +448,19 @@ inmersion_mode = {
 		flag = general_rule
 	}
 }
+
+#not yet you eager beavers
+# spy_network_fog = {
+# 	default = spy_network_fog_off
+
+# 	spy_network_fog_off = {
+# 		flag = general_rule
+# 	}
+# 	spy_network_fog_active = {
+# 		flag = spy_network_fog_enabled
+# 		flag = general_rule
+# 	}
+# }
 
 ai_personalities = {
 	default = ai_personalities_historical

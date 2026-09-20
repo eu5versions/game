@@ -60,15 +60,14 @@ unlock_crossbowmen_advance = {
 unlock_reformed_crusader_knights_advance = {
 	age = age_2_renaissance
 	unlock_unit = a_late_crusader_knights
+	unlock_unit = a_order_knights
+	unlock_unit = a_order_knights_2
 	unlock_levy = levy_late_crusader_knights
 
 	requires = regiment_reinforcement_speed_renaissance
 
 	potential = {
-		OR = {
-			has_reform = government_reform:military_order_reform
-			has_estate_privilege = estate_privilege:clergy_military_orders
-		}
+		modifier:allow_military_order_units = yes
 	}
 
 }
@@ -76,8 +75,8 @@ unlock_reformed_crusader_knights_advance = {
 unlock_peasant_levy_advance = {
 	age = age_2_renaissance
 	unlock_levy = levy_a_peasant_levy
-	
-	requires = medieval_military
+
+	requires = renaissance_development
 }
 
 
@@ -100,8 +99,8 @@ unlock_early_arquebusiers_advance = {
 unlock_matchlock_levy = {
 	age = age_3_discovery
 	unlock_levy = levy_a_matchlock_levy
-	
-	requires = unlock_early_arquebusiers_advance
+
+	requires = surgery_advance
 }
 
 
@@ -126,8 +125,8 @@ unlock_pikemen_advance = {
 unlock_flintlock_levy = {
 	age = age_4_reformation
 	unlock_levy = levy_a_flintlock_levy
-	
-	requires = unlock_arquebusiers_advance
+
+	requires = pharmacology_advance
 }
 
 unlock_hunters_advance = {
@@ -149,8 +148,8 @@ unlock_musketeers_advance = {
 militiamen_advance = {
 	age = age_5_absolutism
 	unlock_levy = levy_a_militiamen
-	
-	requires = unlock_musketeers_advance
+
+	requires = sanitation_advance
 }
 
 unlock_sharpshooters_advance = {
@@ -180,8 +179,8 @@ unlock_grenadiers_advance = {
 conscription_advance = {
 	age = age_6_revolutions
 	unlock_levy = levy_conscripts
-	
-	requires = unlock_fusiliers_advance
+
+	requires = vaccination_advance
 }
 
 

@@ -31,6 +31,12 @@ institution_spread_from_was_possible_spawn_early = {
 		}
 		multiply = 0
 	}
+	if = {
+		limit = {
+			has_game_rule = institution_could_have_spawned_spread_disabled
+		}
+		multiply = 0
+	}
 	multiply = 0.2
 }
 
@@ -81,6 +87,12 @@ institution_spread_from_was_possible_spawn_mid = {
 		}
 		multiply = 0
 	}
+	if = {
+		limit = {
+			has_game_rule = institution_could_have_spawned_spread_disabled
+		}
+		multiply = 0
+	}
 	multiply = 0.05
 }
 
@@ -127,6 +139,12 @@ institution_spread_from_was_possible_spawn_late = {
 	if = {
 		limit = {
 			has_game_rule = institution_spawn_random_city
+		}
+		multiply = 0
+	}
+	if = {
+		limit = {
+			has_game_rule = institution_could_have_spawned_spread_disabled
 		}
 		multiply = 0
 	}
