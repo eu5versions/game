@@ -339,6 +339,7 @@ NUnit = {
 
 	REGIMENT_SIZE = 1000
 	ATTRITION_ON_FOOD_CONSUMPTION_IMPACT = 2.0
+	MAX_FOOD_CONSUMPTION_PENALTY = 3.0	# cap on the over-supply-limit food consumption penalty (consumption never exceeds base * (1 + this)). 0 = uncapped.
 	MONTHS_OF_FOOD_FOR_DETACHED_SUPPORT = 6
 	
 	ATTRITION_LACK_OF_FOOD	= 5	
@@ -1496,6 +1497,7 @@ NCulture = {
 
 	ASSIMILATION_BURGHER_MARKET_LANGUAGE_MIN_MULTIPLIER = 0.01	# Burghers whose language matches the market language assimilate at (1 - market_access), floored at this value, instead of being blocked outright
 
+	ASSIMILATION_PRIMARY_CULTURE_MODIFIER = -1.0 # The primary culture is slowest to assimilate
 	ASSIMILATION_ACCEPTED_CULTURE_MODIFIER = -0.75 # Accepted cultures are slower to assimilate because we already give them extra rights
 	ASSIMILATION_TOLERATED_CULTURE_MODIFIER = -0.25 
 

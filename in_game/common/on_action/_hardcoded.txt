@@ -734,7 +734,6 @@ on_annex = {
 				root = {
 					is_human = yes
 				}
-				ironman = yes
 			}
 			set_variable = {
 				name = unlock_achievement_for_the_glory
@@ -1635,7 +1634,6 @@ on_winning_war = {
 				root = {
 					is_human = yes
 				}
-				ironman = yes
 			}
 			set_variable = {
 				name = unlock_achievement_victorious
@@ -1730,7 +1728,6 @@ on_pre_winning_war = {
 				scope:winner = {
 					is_human = yes
 				}
-				ironman = yes
 				scope:war = {
 					OR = {
 						casus_belli ?= casus_belli:cb_jihad
@@ -1745,7 +1742,6 @@ on_pre_winning_war = {
 		}
 		if = {
 			limit = {
-				ironman = yes
 				scope:war = { 
 					casus_belli ?= casus_belli:cb_religious_superiority 
 					any_attacker = {
@@ -4528,7 +4524,6 @@ on_location_changed_owner = {
 				scope:winner ?= {
 					is_human = yes
 				}
-				ironman = yes
 			}
 			scope:winner ?= {
 				set_variable = {
@@ -5114,7 +5109,6 @@ on_work_of_art_created = {
 						}
 					}
 				}
-				ironman = yes
 			}
 			root.owner = {
 				set_variable = {
@@ -5297,7 +5291,6 @@ on_parliament_passed = {
 				root = {
 					is_human = yes
 				}
-				ironman = yes
 			}
 			set_variable = {
 				name = unlock_achievement_all_in_favor
@@ -5578,7 +5571,6 @@ on_policy_changed = {
 				root = {
 					is_human = yes
 				}
-				ironman = yes
 			}
 			set_variable = {
 				name = unlock_achievement_rule_of_law

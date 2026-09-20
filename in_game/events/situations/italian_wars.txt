@@ -1595,7 +1595,7 @@ italian_wars.26 = { #Diplomatic Incident
 			root = { can_declare_war_on = prev }
 			relative_military_strength = {
 				target = root
-				value <= 0.5
+				value < 0.4
 			} 
 		}
 	}
@@ -1617,7 +1617,7 @@ italian_wars.26 = { #Diplomatic Incident
 				root = { can_declare_war_on = prev }
 				relative_military_strength = {
 					target = root
-					value <= 0.5
+					value < 0.4
 				} 
 			}
 			save_scope_as = target_country
@@ -1662,6 +1662,13 @@ italian_wars.26 = { #Diplomatic Incident
 					desc = "RELATIVE_STRENGTH"
 				}
 			}
+			if = {
+				limit = { is_during_bankruptcy = yes }
+				subtract = {
+					desc = "[bankruptcy|e]"
+					value = 10000
+				}
+			}
 			add = {
 				value = modifier:aggressiveness_modifier
 				subtract = modifier:carefulness_modifier
@@ -1676,6 +1683,33 @@ italian_wars.26 = { #Diplomatic Incident
 			add = {
 				value = army_size
 				desc = "army_size"
+			}
+
+			if = {
+				limit = { stability < 0 }
+
+				add = {
+					value = stability
+					desc = "[stability|e]"
+				}
+			}
+
+			add = {
+				value = {
+					add = average_control_in_home_region
+					multiply = 100
+					subtract = 50
+				}
+				desc = "average_control_in_home_region"
+			}
+
+			if = {
+				limit = { inflation > 0.1 }
+				subtract = {
+					desc = "[inflation|e]"
+					value = inflation
+					multiply = 100
+				}
 			}
 		}
 
@@ -1725,6 +1759,27 @@ italian_wars.26 = { #Diplomatic Incident
 				subtract = modifier:carefulness_modifier
 				multiply = 50
 				desc = "aggressiveness modifier minus carefulness modifier"
+			}
+
+			if = {
+				limit = { monthly_balance > 0 }
+				add = {
+					desc = "gold stored"
+					value = gold
+					divide = monthly_balance
+					max = 100
+					min = 1
+				}
+			}
+
+			if = {
+				limit = { stability > 0 }
+
+				add = {
+					value = stability
+					multiply = 0.05
+					desc = "positive stability"
+				}
 			}
 		}
 

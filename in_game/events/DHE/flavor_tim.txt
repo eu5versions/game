@@ -466,6 +466,7 @@ flavor_tim.8 = {
 			OR = {
 				has_culture_group = culture_group:turkic_group
 				has_culture_group = culture_group:iranian_group
+				has_culture_group = culture_group:mongolian_group
 			}
 		}
 		character:chg_timur_lame_borjigin = {

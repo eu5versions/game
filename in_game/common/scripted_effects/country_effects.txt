@@ -2511,7 +2511,6 @@ cc_setup_new_town = {
 			scope:actor = {
 				is_human = yes
 			}
-			ironman = yes
 		}
 		scope:actor = {
 			set_variable = {

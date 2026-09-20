@@ -630,6 +630,19 @@ hussite_wars.7 = { #The Plight of the Hussites
 			}
 		}
 
+		if = {
+			limit = { 
+				c:BOH = { is_subject = no }
+				is_subject = no 
+			}
+			create_relation = {
+				first = root
+				second = c:BOH
+				type = relation_type:alliance
+			}
+		}
+
+
 
 		if = {
 			limit = { exists = scope:target_war }

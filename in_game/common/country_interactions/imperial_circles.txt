@@ -416,7 +416,7 @@ petition_imperial_diet = {
 	ai_will_do = {
 		add = {
 			desc = "TARGET_ACCEPTANCE"
-			value = "scope:actor.reverse_country_interaction_acceptance(country_interaction:petition_imperial_diet|scope:recipient)"
+			value = "scope:actor.country_interaction_acceptance(country_interaction:petition_imperial_diet|scope:recipient)"
 			if = {
 				limit = { scope:recipient = { is_ai = no } }
 				subtract = 50	#just so the AI doesn't spam it

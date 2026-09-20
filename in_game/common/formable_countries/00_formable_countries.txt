@@ -3485,7 +3485,7 @@ SHL_f = {
 }
 
 RUM_f = {
-	level = 3
+	level = 4
 	required_locations_fraction = 0.85
 	rule = historical
 	potential = {
@@ -4844,7 +4844,7 @@ PON_f = {
 }
 
 TUR_f = {
-	level = 3
+	level = 4
 	rule = historical
 
 	potential = {

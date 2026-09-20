@@ -100,7 +100,7 @@ unlock_matchlock_levy = {
 	age = age_3_discovery
 	unlock_levy = levy_a_matchlock_levy
 
-	requires = surgery_advance
+	in_tree_of = pike_and_shot_advance
 }
 
 
@@ -126,7 +126,7 @@ unlock_flintlock_levy = {
 	age = age_4_reformation
 	unlock_levy = levy_a_flintlock_levy
 
-	requires = pharmacology_advance
+	in_tree_of = artillery_institution_advance
 }
 
 unlock_hunters_advance = {
@@ -149,7 +149,7 @@ militiamen_advance = {
 	age = age_5_absolutism
 	unlock_levy = levy_a_militiamen
 
-	requires = sanitation_advance
+	in_tree_of = military_revolution_advance
 }
 
 unlock_sharpshooters_advance = {
@@ -180,7 +180,7 @@ conscription_advance = {
 	age = age_6_revolutions
 	unlock_levy = levy_conscripts
 
-	requires = vaccination_advance
+	in_tree_of = levee_en_masse_advance
 }
 
 
@@ -378,8 +378,8 @@ unlock_supply_convoy = {
 unlock_baggage_train = {
 	age = age_4_reformation
 	unlock_unit = a_baggage_train
-	
-	requires = recruitment_improvements_reformation
+
+	in_tree_of = artillery_institution_advance
 }
 
 
@@ -387,7 +387,7 @@ unlock_wagon_train = {
 	age = age_5_absolutism
 	unlock_unit = a_wagon_train
 
-	requires = army_movement_speed_absolutism
+	in_tree_of = military_revolution_advance
 }
 
 unlock_logistics_corps = {
